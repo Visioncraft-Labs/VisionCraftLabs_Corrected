@@ -1,7 +1,12 @@
+import React from 'react';
 
-<form name="contact" method="POST" data-netlify="true" netlify>
-  <input type="text" name="name" required />
-  <input type="email" name="email" required />
-  <textarea name="message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+export default function Contact() {
+  return (
+    <form name="contact" method="POST" data-netlify="true" netlify>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required />
+      <button type="submit">Send</button>
+    </form>
+  );
+}
